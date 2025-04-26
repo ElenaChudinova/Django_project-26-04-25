@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Домашнее задание - Bootstrap</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h3 class="text-bg-info p-3 text-center mt-5">Контакты</h3>
+        <form method="post" action="">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="row mt-5">
+                        <div class="col-5">
+                            <div class="card bg-body text-body p-3">
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Алиса">
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text">@</span>
+                                            <input type="text" class="form-control" placeholder="examle@examle">
+                                        </div>
+                                        <div class="mb-3 mt-3">
+                                            <textarea class="form-control" id="message" rows="3" name="message" required placeholder="Сообщение"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-info w-100">Отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-6 mt-3">
+                                <div class="card-body">
+                                    <h5>Наши контакты</h5>
+                                    <div class="row mt-3">
+                                        <p class="lh-1">На странице контактов вы найдёте адрес, телефон и график работы магазина. Вы также можете воспользоваться картой, чтобы найти ближайший магазин Hoff.
+                                        <p class="lh-sm">Если у вас возникли вопросы или нужна помощь, не стесняйтесь обращаться в службу поддержки Hoff. Специалисты службы поддержки помогут вам решить любой вопрос и сделать ваш шопинг в Hoff максимально комфортным.
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </form>
+    </div>
+    <script src="/static/js/bootstar.bundle.min.js"></script>
+</body>
+</html>
