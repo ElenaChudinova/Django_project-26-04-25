@@ -1,0 +1,168 @@
+[
+{
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+        "product_name": "Лайм",
+        "description": "Страна происхождения Бразилия",
+        "image": "",
+        "category_name": "фрукты",
+        "price": 296,
+        "created_at": "2025-05-01T09:26:59.140Z",
+        "updated_at": "2025-05-01T09:26:59.140Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+        "product_name": "Молоко",
+        "description": "жирность 3,2 процента",
+        "image": "",
+        "category_name": "деликатесы",
+        "price": 169,
+        "created_at": "2025-05-01T10:14:10.930Z",
+        "updated_at": "2025-05-01T10:14:10.931Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+        "product_name": "Молоко",
+        "description": "жирность 3,2 процента",
+        "image": "",
+        "category_name": "деликатесы",
+        "price": 169,
+        "created_at": "2025-05-01T10:18:03.550Z",
+        "updated_at": "2025-05-01T10:18:03.550Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+        "product_name": "Творог",
+        "description": "жирность 9 процентов",
+        "image": "",
+        "category_name": "деликатесы",
+        "price": 259,
+        "created_at": "2025-05-01T10:20:47.354Z",
+        "updated_at": "2025-05-01T10:20:47.354Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+        "product_name": "Рис басматти",
+        "description": "Страна происхождения Тасмания",
+        "image": "",
+        "category_name": "бакалея",
+        "price": 280,
+        "created_at": "2025-05-01T10:25:12.782Z",
+        "updated_at": "2025-05-01T10:25:12.782Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+        "product_name": "Картофель",
+        "description": "Ранний урожай",
+        "image": "",
+        "category_name": "фрукты_овощи",
+        "price": 89,
+        "created_at": "2025-05-01T10:27:39.856Z",
+        "updated_at": "2025-05-01T12:07:49.062Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+        "product_name": "Апельсин",
+        "description": "Для сока, Страна происхождения Египет",
+        "image": "",
+        "category_name": "фрукты_овощи",
+        "price": 80,
+        "created_at": "2025-05-01T10:29:56.680Z",
+        "updated_at": "2025-05-01T10:29:56.680Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+        "product_name": "Печенье OREO",
+        "description": "классический, 100г",
+        "image": "",
+        "category_name": "кондитерские изделия",
+        "price": 290,
+        "created_at": "2025-05-01T10:32:38.459Z",
+        "updated_at": "2025-05-01T10:32:38.459Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 10,
+    "fields": {
+        "product_name": "Жевательная резинка Orbit",
+        "description": "мятная",
+        "image": "",
+        "category_name": "кондитерские изделия",
+        "price": 39,
+        "created_at": "2025-05-01T10:49:23.478Z",
+        "updated_at": "2025-05-01T10:49:23.478Z"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 11,
+    "fields": {
+        "product_name": "Спагетти",
+        "description": "Произведено из твердых сортов пшеницы",
+        "image": "",
+        "category_name": "бакалея",
+        "price": 159,
+        "created_at": "2025-05-01T11:51:24.035Z",
+        "updated_at": "2025-05-01T11:51:24.038Z"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+        "category_name": "кондителские изделия",
+        "description": "классический",
+        "product": 9
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+        "category_name": "Ранний урожай",
+        "description": "Ранний урожай",
+        "product": 7
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+        "category_name": "бакалея",
+        "description": "Страна происхождения Тасмания",
+        "product": 6
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+        "category_name": "кондителские изделия",
+        "description": "клубничная",
+        "product": 9
+    }
+}
+]
