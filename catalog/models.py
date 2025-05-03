@@ -17,7 +17,7 @@ class Product(models.Model):
     id = models.AutoField(auto_created=True, primary_key=True, verbose_name='id')
     product_name = models.CharField(max_length=50, verbose_name='Наименование') # наименование,
     description = models.TextField(max_length=300, verbose_name='Описание', null=True, blank=True) # описание,
-    image = models.ImageField(upload_to='media/photos', verbose_name='Фотография', null=True, blank=True) # изображение,
+    image = models.ImageField(upload_to='photos/', verbose_name='Фотография', null=True, blank=True) # изображение,
     category_name = models.CharField(max_length=50, verbose_name='Категория') # категория,
     price = models.IntegerField(verbose_name='Цена') # цена за покупку,
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания', editable=False) # дата создания,
