@@ -116,6 +116,9 @@ STATIC_URL = 'static/'
 # Здесь указываем список статических директорий, в данном случае путь в корень проекта и директорию static
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
