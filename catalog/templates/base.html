@@ -61,10 +61,8 @@
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto"><h1 class="fw-light">Первый продуктовый интернет маркет</h1>
                 <p class="lead text-body-secondary">Продуктовая ярмарка</p>
-                <p>
-                    <a href="#" class="btn btn-primary my-2">Main call to action</a><a href="#"
-                                                                                       class="btn btn-secondary my-2">Secondary
-                    action</a></p></div>
+                <input class="btn btn-primary" type="button" value="Добавить продукт">
+            </div>
         </div>
     </section>
 
@@ -72,10 +70,37 @@
     {% endblock %}
 </main>
 <footer class="text-body-secondary py-5">
-    <div class="container"><p class="float-end mb-1"><a href="#">Back to top</a></p>
-        <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-                href="/docs/5.3/getting-started/introduction">getting started guide</a>.</p></div>
+    <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p class="fs-4 mb-3">Интернет маркет вкусных продуктов</p>
+        <p class="mb-0">Устали стоять в очередях и носить тяжелые пакеты? Забудьте об этих неудобствах! В нашем интернет-магазине Вы
+            можете купить онлайн все необходимые продукты с доставкой на дом. Удобный каталог и система поиска позволят
+            Вам всё быстро найти и оформить заказ в любое удобное для Вас время. Просто выберите нужный день и интервал
+            доставки, за 15 минут до вручения заказа наш курьер обязательно Вам позвонит. Первый заказ доставим
+            бесплатно. Наши цены оправданы и разумны. Хотите покупать выгоднее? Участвуйте в акциях, бонусных
+            программах и тест-драйвах!
+
+            Деликатеска предоставляет покупателям гарантии возврата в случае возникновения претензий по качеству. Просто
+            сообщите нам о проблеме по круглосуточному телефону +7 495 500-9-500 .
+
+            Первоклассный сервис, удобная доставка, свежесть и супергарантия: мы делаем все, чтобы Ваша жизнь была
+            комфортнее и вкуснее.</p>
+    </div>
 </footer>
 <script src="{% static '/js/bootstrap.bundle.min.js' %}"></script>
 </body>
