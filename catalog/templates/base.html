@@ -61,7 +61,8 @@
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto"><h1 class="fw-light">Первый продуктовый интернет маркет</h1>
                 <p class="lead text-body-secondary">Продуктовая ярмарка</p>
-                <input class="btn btn-primary" type="button" value="Добавить продукт">
+                <a href="{% url 'catalog:add_product' %}">
+                <input class="btn btn-primary" type="button" value="Добавить продукт"></a>
             </div>
         </div>
     </section>
