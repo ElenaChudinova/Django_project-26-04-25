@@ -1,6 +1,6 @@
-from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404, redirect
 from catalog.models import Product
+from .forms import ProductForm
 
 def index(request):
     return render(request, 'products_list.html')
@@ -16,10 +16,13 @@ def info_product(request, pk):
     context = {'product': product}
     return render(request, "info_product.html", context=context)
 
-def contacts(request):
-    if request.method == "POST":
-        name = request.POST.get("name")
-        message = request.POST.get("message")
 
-        return HttpResponse(f"Спасибо, {name}. Сообщение получено.")
-    return render(request, 'catalog/contacts.html')
+def add_product(request):
+    if request.method == "POST":
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('catalog:product_list')
+    else:
+        form = ProductForm()
+    return render(request, 'add_product.html', {'form': form})
