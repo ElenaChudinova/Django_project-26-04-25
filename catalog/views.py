@@ -1,28 +1,36 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.urls import reverse_lazy, reverse
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from catalog.models import Product
-from .forms import ProductForm
-
-def index(request):
-    return render(request, 'products_list.html')
-
-def products_list(request):
-    products = Product.objects.all()
-    context = {'products': products}
-    return render(request, 'products_list.html', context)
 
 
-def info_product(request, pk):
-    product = get_object_or_404(Product, pk=pk)
-    context = {"product": product}
-    return render(request, "info_product.html", context=context)
+class ProductListView(ListView):
+    model = Product
+
+class ProductDetailView(DetailView):
+    model = Product
+
+    def get_object(self, queryset=None):
+        self.object = super().get_object(queryset)
+        self.object.views_counter += 1
+        self.object.save()
+        return self.object
+
+class ProductCreateView(CreateView):
+    model = Product
+    fields = ("product_name", "description", "image", "category_name", "price")
+    success_url = reverse_lazy('catalog:product_list')
+
+class ProductUpdateView(UpdateView):
+    model = Product
+    fields = ("product_name", "description", "image", "category_name", "price")
+    success_url = reverse_lazy('catalog:product_list')
+
+    def get_success_url(self):
+        return reverse('catalog:product_detail', args=[self.kwargs.get('pk')])
+
+class ProductDeleteView(DeleteView):
+    model = Product
+    success_url = reverse_lazy('catalog:product_list')
 
 
-def add_product(request):
-    if request.method == "POST":
-        form = ProductForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            return redirect('catalog:products_list')
-    else:
-        form = ProductForm()
-    return render(request, 'add_product.html', {'form': form})
+

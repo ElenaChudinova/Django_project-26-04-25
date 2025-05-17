@@ -1,9 +1,8 @@
 from django.db import models
 
-
 class Category(models.Model):
     id = models.AutoField(auto_created=True, primary_key=True, verbose_name="id")
-    category_name = models.CharField(max_length=50, verbose_name="Наименование")
+    category_name = models.CharField(max_length=50, verbose_name="Наименование", help_text='Введите категорию')
     description = models.TextField(
         max_length=300, verbose_name="Описание", null=True, blank=True
     )
@@ -16,21 +15,20 @@ class Category(models.Model):
         verbose_name_plural = "категории"
 
 
-class Product(models.Model):
+class Blog(models.Model):
     id = models.AutoField(auto_created=True, primary_key=True, verbose_name="id")
-    product_name = models.CharField(
-        max_length=50,
+    blog_name = models.CharField(
+        max_length=100,
         verbose_name="Наименование",
-        help_text="Введите наименование продукта",
+        help_text="Введите наименование заголовка",
     )
     description = models.TextField(
-        max_length=300, verbose_name="Описание", null=True, blank=True
+        max_length=1000, verbose_name="Содержимое", null=True, blank=True, help_text='Введите описание блога'
     )
     image = models.ImageField(
-        upload_to="photos", verbose_name="Фотография", null=True, blank=True
+        upload_to="photos", verbose_name="Превью", null=True, blank=True
     )
-    category_name = models.CharField(max_length=50, verbose_name="Категория")
-    price = models.IntegerField(verbose_name="Цена")
+    category_name = models.CharField(max_length=50, verbose_name="Категория", help_text='Введите категорию')
     created_at = models.DateTimeField(
         auto_now_add=True, verbose_name="Дата создания", editable=False, blank=True
     )
@@ -45,8 +43,10 @@ class Product(models.Model):
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        related_name="products",
+        related_name="blogs",
     )
+
+    publication = models.BooleanField(default=False)
 
     views_counter = models.PositiveIntegerField(
         verbose_name="Счетчик просмотров",
@@ -55,11 +55,11 @@ class Product(models.Model):
     )
 
     def __str__(self):
-        return f"{self.product_name} {self.category_name}"
+        return f"{self.blog_name} {self.category_name}"
 
     class Meta:
-        verbose_name = "продукт"
-        verbose_name_plural = "продукты"
+        verbose_name = "блог"
+        verbose_name_plural = "блоги"
         ordering = [
-            "product_name",
+            "blog_name",
         ]
