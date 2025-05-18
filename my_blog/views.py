@@ -7,7 +7,7 @@ class BlogListView(ListView):
     model = Blog
 
     def get_queryset(self):
-        pass
+        return Blog.objects.filter(publication=True)
 
 
 class BlogDetailView(DetailView):
