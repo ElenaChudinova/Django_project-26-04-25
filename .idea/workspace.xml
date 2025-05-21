@@ -4,41 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db49b97-4c12-48c8-8ed4-aa3a17d99e32" name="Changes" comment="update files 11-05-2025">
-      <change beforePath="$PROJECT_DIR$/catalog/templates/info_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/info_product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/products_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/products_list.html" afterDir="false" />
-    </list>
+    <list default="true" id="3db49b97-4c12-48c8-8ed4-aa3a17d99e32" name="Changes" comment="update DZ 21-05-25" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="working_folder" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/catalog" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ElenaChudinova"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ElenaChudinova&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ElenaChudinova/Django_project-26-04-25.git&quot;,
     &quot;accountId&quot;: &quot;69a79043-48fc-4e61-9aa8-e2a0074f88c8&quot;
   }
 }</component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2x01OaVXGZVReN5n1eQBrTWUxVX" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -50,11 +54,25 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Python.forms.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "working__folder"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/ovetganna/PycharmProjects/DZ_Django 26 04 25/my_blog/tenplates/my_blog",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my_blog/tenplates/my_blog" />
+      <recent name="$PROJECT_DIR$/my_blog/templatetags" />
+      <recent name="$PROJECT_DIR$/my_blog" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/catalog/templates/catalog" />
+      <recent name="$PROJECT_DIR$/catalog" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -118,8 +136,55 @@
       <option name="presentableId" value="Default" />
       <updated>1747060145852</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="new app DZ">
+      <option name="closed" value="true" />
+      <created>1747472211109</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747472211109</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update views file">
+      <option name="closed" value="true" />
+      <created>1747552316491</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747552316491</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update DZ 21-05-25">
+      <option name="closed" value="true" />
+      <created>1747842004071</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747842004071</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="working_folder" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new DZ 10_05_2025_2" />
@@ -128,6 +193,9 @@
     <MESSAGE value="update files_jpg" />
     <MESSAGE value="update files_html" />
     <MESSAGE value="update files 11-05-2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="update files 11-05-2025" />
+    <MESSAGE value="new app DZ" />
+    <MESSAGE value="update views file" />
+    <MESSAGE value="update DZ 21-05-25" />
+    <option name="LAST_COMMIT_MESSAGE" value="update DZ 21-05-25" />
   </component>
 </project>
